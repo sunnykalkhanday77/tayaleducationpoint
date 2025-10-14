@@ -13,6 +13,8 @@
   <header>
     <div class="logo">TAYAL EDUCATION POINT</div>
     <nav>
+      <li><a href="#login">Login</a></li>
+
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -44,15 +46,18 @@
     </ul>
   </section>
 
-  <section id="login" class="bubble">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="text" id="username" placeholder="Enter Username" required />
-      <input type="password" id="password" placeholder="Enter Password" required />
-      <button type="submit" class="btn">Login</button>
-      <p id="loginMsg"></p>
-    </form>
-  </section>
+  <section id="login" class="about">
+  <h2>Login</h2>
+  <form id="loginForm" style="max-width:400px;margin:auto;text-align:center;">
+    <input type="text" id="username" placeholder="Enter Username" required
+           style="width:100%;padding:10px;margin:10px 0;border-radius:5px;border:1px solid #ccc;">
+    <input type="password" id="password" placeholder="Enter Password" required
+           style="width:100%;padding:10px;margin:10px 0;border-radius:5px;border:1px solid #ccc;">
+    <button type="submit" class="btn" style="width:100%;">Login</button>
+    <p id="loginMsg" style="color:red;margin-top:10px;"></p>
+  </form>
+</section>
+
 
   <section id="contact" class="bubble">
     <h2>Contact Us</h2>
@@ -95,4 +100,5 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 
 </body>
 </html>
+
 
